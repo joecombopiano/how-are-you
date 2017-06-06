@@ -14,33 +14,33 @@ class StressRater extends Component {
         this.props.onChange('stressRating',value);
     };
     renderDescription(){
-        let description = "";
+        let description = '';
         switch(this.state.rating){
             case 1:
             case 2:
-                description = "Feeling stress free.";
+                description = 'Feeling stress free.';
                 
                 break;
             case 3:
             case 4:
             case 5:
             case 6: 
-                description = "This is fine.";
+                description = 'This is fine.';
                 break;
             case 7:
             case 8: 
             case 9:
-                description = "Extremely stressed";
+                description = 'Extremely stressed';
                 break;
             case 10: 
-                description = "I can't even eat/sleep."
+                description = 'I can\'t even eat/sleep.'
                 break;
             default:
-                description = "My mind is currently laying on a beach."
+                description = 'My mind is currently laying on a beach.'
                 
         }
         return (
-            <div className = "RatingDescription"> {description} </div>
+            <div className = 'RatingDescription'> {description} </div>
         );
     }
     render() {

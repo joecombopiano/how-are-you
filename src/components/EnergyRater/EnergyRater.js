@@ -14,31 +14,31 @@ class EnergyRater extends Component {
         this.props.onChange('energyRating', value);
     };
     renderMoodDescription = () => {
-        let description = "";
+        let description = '';
         switch(this.state.rating){
             case 1:
             case 2:
-                description = "I've thought about getting off the couch.";
+                description = 'I\'ve thought about getting off the couch.';
                 break;
             case 3:
             case 4:
             case 5:
             case 6: 
-                description = "I'm moving, isn't that good enough?";
+                description = 'I\'m moving, isn\'t that good enough?';
                 break;
             case 7:
             case 8: 
             case 9:
-                description = "Everywhere I was going, I was running.";
+                description = 'Everywhere I was going, I was running.';
                 break;
             case 10: 
-                description = "Going to climb Mt. Everest"
+                description = 'Going to climb Mt. Everest'
                 break;
             default:
-                description = "zzzzzz"
+                description = 'zzzzzz'
         }
         return (
-            <div className = "RatingDescription"> {description} </div>
+            <div className = 'RatingDescription'> {description} </div>
         );
     };
 

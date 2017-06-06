@@ -14,31 +14,31 @@ class MoodRater extends Component {
         this.props.onChange('moodRating',value);
     };
     renderMoodDescription = () => {
-        let description = "";
+        let description = '';
         switch(this.state.rating){
             case 1:
             case 2:
-                description = "I'm in a bad mood";
+                description = 'I\'m in a bad mood';
                 break;
             case 3:
             case 4:
             case 5:
             case 6: 
-                description = "I'm feeling meh";
+                description = 'I\'m feeling meh';
                 break;
             case 7:
             case 8: 
             case 9:
-                description = "Feeling pretty good";
+                description = 'Feeling pretty good';
                 break;
             case 10: 
-                description = "Best. Day. Ever!"
+                description = 'Best. Day. Ever!'
                 break;
             default:
-                description = "Worst. Day. Ever."
+                description = 'Worst. Day. Ever.'
         }
         return (
-            <div className = "RatingDescription"> {description} </div>
+            <div className = 'RatingDescription'> {description} </div>
         );
     };
 
