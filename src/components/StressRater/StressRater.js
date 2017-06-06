@@ -18,7 +18,8 @@ class StressRater extends Component {
         switch(this.state.rating){
             case 1:
             case 2:
-                description = "Extremely stressed";
+                description = "Feeling stress free.";
+                
                 break;
             case 3:
             case 4:
@@ -29,13 +30,14 @@ class StressRater extends Component {
             case 7:
             case 8: 
             case 9:
-                description = "Feeling stress free.";
+                description = "Extremely stressed";
                 break;
             case 10: 
-                description = "My mind is currently laying on a beach."
+                description = "I can't even eat/sleep."
                 break;
             default:
-                description = "Can't eat/sleep."
+                description = "My mind is currently laying on a beach."
+                
         }
         return (
             <div className = "RatingDescription"> {description} </div>
@@ -46,6 +48,7 @@ class StressRater extends Component {
         return (
             <div className='StressRater'>
                 <h3>How's your stress?</h3>
+                <p>Rate it from 0 (stress free) to 10 (stressed) </p>
                 <div className='RatingContainer'>
                     <FontIcon className='material-icons'>arrow_downward</FontIcon>
                     <Slider className='MoodSlider'  min={0} max={10} step={1} onChange={this.updateRating} />

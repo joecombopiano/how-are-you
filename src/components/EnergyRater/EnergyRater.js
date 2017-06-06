@@ -46,7 +46,7 @@ class EnergyRater extends Component {
         return (
             <div className='EnergyRater'>
                 <h3>How's your energy level today? </h3>
-                <p>Rate it from 0 (bad) to 10 (great). </p>
+                <p>Rate it from 0 (tired) to 10 (active). </p>
                 <div className='RatingContainer'>
                     <FontIcon className='material-icons'>hotel</FontIcon>
                     <Slider className='EnergySlider'  min={0} max={10} step={1} onChange={this.updateRating} />
