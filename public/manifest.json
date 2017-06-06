@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.0",
+  "short_name": "How are you?",
+  "name": "How are you?",
+  "description": "Chrome extension to track soft data",
+  "icons": {
+   
+  },
+  
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "chrome_url_overrides": {
+    "newtab": "./index.html"
+  }
+}

@@ -1,0 +1,11 @@
+
+.MainSection {
+   
+   
+    margin: auto;
+}
+.MainStepper {
+    widows: 600px;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,12 @@
+.Summary {
+    text-align: center;
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+
+.Results{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}

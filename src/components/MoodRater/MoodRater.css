@@ -1,0 +1,17 @@
+.MoodRater {
+  
+}
+.RatingContainer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.MoodSlider {
+    width: 300px;
+    height: 60px;
+    margin: 0px 20px;
+
+}
+.RatingDescription {
+    text-align: center;
+}
