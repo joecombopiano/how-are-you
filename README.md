@@ -9,3 +9,6 @@ To build:
 ```
 npm run build
 ```
+
+# Demo
+![alt text](./example.gif "Logo Title Text 1")
